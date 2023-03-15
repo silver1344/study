@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+
+    <body>
+        <div class="header">
+          <form id="todo-form">
+            <h2>My To Do List</h2>
+            <input id="txt" type="text" placeholder="Title...">
+            <button type="submit">Add</button>
+          </form>
+        </div>
+          
+          <ul id="myUL">
+            {% for todolist in todo %}
+              <li>{{todo.comment}}</td>
+            {% endfor %}
+          </ul>
+
+          <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+          <script src="/mongoose.js"></script>
+    </body>
+</html>
